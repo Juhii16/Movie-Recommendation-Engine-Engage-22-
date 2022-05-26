@@ -394,7 +394,7 @@ if __name__ == '__main__':
                     'you covered, send us a list of the missing masterpieces and we will include them in our corpus '
                     '</p>', unsafe_allow_html=True)
 	
-      
+        st.subheader("Document Files")
 	
     elif choice == "Feedback form":
         st.markdown(""" <style> .font {
