@@ -5,7 +5,6 @@ import hashlib
 from PIL import Image
 import plotly.express as px
 import pandas as pd
-import streamlit.components.v1 as stc
 import sqlite3
 import requests
 import streamlit as st
