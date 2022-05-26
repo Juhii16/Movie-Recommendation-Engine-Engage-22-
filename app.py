@@ -397,7 +397,7 @@ if __name__ == '__main__':
 
        
 	st.subheader("DocumentFiles")
-		docx_file = st.file_uploader("Upload File",type=['txt','docx','pdf'])
+		docx_file = st.file_uploader("Upload File",type=['txt'])
 		if st.button("Process"):
 			if docx_file is not None:
 				file_details = {"Filename":docx_file.name,"FileType":docx_file.type,"FileSize":docx_file.size}
@@ -411,15 +411,8 @@ if __name__ == '__main__':
 					raw_text = str(docx_file.read(),"utf-8") # works with st.text and st.write,used for futher processing
 					# st.text(raw_text) # Works
 					st.write(raw_text) # works
-				elif docx_file.type == "application/pdf":
-					# raw_text = read_pdf(docx_file)
-					# st.write(raw_text)
-					try:
-						with pdfplumber.open(docx_file) as pdf:
-						    page = pdf.pages[0]
-						    st.write(page.extract_text())
-					except:
-						st.write("None")	
+				else:
+					st.write('Wrong File Format')
 					    
 			
 
