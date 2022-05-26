@@ -395,6 +395,8 @@ if __name__ == '__main__':
                     '</p>', unsafe_allow_html=True)
 	
         st.subheader("Document Files")
+	docx_file = st.file_uploader("Upload File",type=["txt"])
+	
 	
     elif choice == "Feedback form":
         st.markdown(""" <style> .font {
