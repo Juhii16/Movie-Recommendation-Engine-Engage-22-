@@ -393,9 +393,9 @@ if __name__ == '__main__':
         st.markdown('<p class="font21">Are we missing a favorite of your movies in our database? Dont Worry  we had '
                     'you covered, send us a list of the missing masterpieces and we will include them in our corpus '
                     '</p>', unsafe_allow_html=True)
+	new = st.file_uploader("Upload Document", type=["pdf","docx","txt"])
 	
-        st.subheader("Document Files")
-	st.button('ssds')
+	
 	
 	
     elif choice == "Feedback form":
