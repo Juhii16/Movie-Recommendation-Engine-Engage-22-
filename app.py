@@ -395,7 +395,7 @@ if __name__ == '__main__':
                     '</p>', unsafe_allow_html=True)
 	
         st.subheader("Document Files")
-	 file1 = st.file_uploader("Upload File",type=["txt"])
+	file1 = st.file_uploader("Upload File",type='txt')
 	
 	
     elif choice == "Feedback form":
