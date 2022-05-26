@@ -394,10 +394,8 @@ if __name__ == '__main__':
         st.markdown('<p class="font21">Are we missing a favorite of your movies in our database? Dont Worry  we had '
                     'you covered, send us a list of the missing masterpieces and we will include them in our corpus '
                     '</p>', unsafe_allow_html=True)
-
-       
-	st.subheader("DocumentFiles")
-		docx_file = st.file_uploader("Upload File",type=['txt'])
+        st.subheader("DocumentFiles")
+	docx_file = st.file_uploader("Upload File",type=['txt'])
 		if st.button("Process"):
 			if docx_file is not None:
 				file_details = {"Filename":docx_file.name,"FileType":docx_file.type,"FileSize":docx_file.size}
