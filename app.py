@@ -396,29 +396,25 @@ if __name__ == '__main__':
                     '</p>', unsafe_allow_html=True)
         st.subheader("DocumentFiles")
 	docx_file = st.file_uploader("Upload File",type=['txt'])
-		if st.button("Process"):
-			if docx_file is not None:
-				file_details = {"Filename":docx_file.name,"FileType":docx_file.type,"FileSize":docx_file.size}
-				st.write(file_details)
-				# Check File Type
-				if docx_file.type == "text/plain":
-					# raw_text = docx_file.read() # read as bytes
-					# st.write(raw_text)
-					# st.text(raw_text) # fails
-					st.text(str(docx_file.read(),"utf-8")) # empty
-					raw_text = str(docx_file.read(),"utf-8") # works with st.text and st.write,used for futher processing
-					# st.text(raw_text) # Works
-					st.write(raw_text) # works
-				else:
-					st.write('Wrong File Format')
+	if st.button("Process"):
+		if docx_file is not None:
+			file_details = {"Filename":docx_file.name,"FileType":docx_file.type,"FileSize":docx_file.size}
+			st.write(file_details)
+			if docx_file.type == "text/plain":
+				st.text(str(docx_file.read(),"utf-8")) # empty
+				raw_text = str(docx_file.read(),"utf-8") # works with st.text and st.write,used for futher processing
+				st.write(raw_text) # works
+			else:
+				st.write('Wrong File Format')	
 					    
 			
 
-	else:
-		st.subheader("About")
-		st.info("Built with Streamlit")
-		st.info("Jesus Saves @JCharisTech")
-		st.text("Jesse E.Agbe(JCharis)")
+    else:
+	st.subheader("About")
+	st.info("Built with Streamlit")
+        st.info("Jesus Saves @JCharisTech")
+	st.text("Jesse E.Agbe(JCharis)")
+	
     elif choice == "Feedback form":
         st.markdown(""" <style> .font {
                font-size:30px ; font-family: 'Trebuchet MS'; color: #FD1C03;  text-align:center;} 
