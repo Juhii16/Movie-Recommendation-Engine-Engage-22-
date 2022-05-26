@@ -397,7 +397,7 @@ if __name__ == '__main__':
 	
         st.subheader("DocumentFiles")
 	
-	docx_file = st.file_uploader("Upload File",type=['txt'])
+	docx_file = st.file_uploader("Upload File",type=["txt"])
 	
 	if st.button("Process"):
 		if docx_file is not None:
@@ -406,7 +406,7 @@ if __name__ == '__main__':
 			if docx_file.type == "text/plain":
 				st.text(str(docx_file.read(),"utf-8")) # empty
 				raw_text = str(docx_file.read(),"utf-8") # works with st.text and st.write,used for futher processing
-				st.write(raw_text) # works
+				st.write(raw_text) # works				
 			else:
 				st.write('Wrong File Format')	
 		else:
