@@ -187,7 +187,9 @@ if __name__ == '__main__':
         if ch:
             st.write('Thank you For Agreeing')
     elif choice == "Login":
-           col1, col2, col3 = st.columns([1, 2, 1])
+        
+        
+        col1, col2, col3 = st.columns([1, 2, 1])
 
         with col2:
             file_ = open("hello.gif", "rb")
