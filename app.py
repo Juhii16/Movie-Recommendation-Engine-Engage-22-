@@ -395,8 +395,8 @@ if __name__ == '__main__':
                     'you covered, send us a list of the missing masterpieces and we will include them in our corpus '
                     '</p>', unsafe_allow_html=True)
 
-        elif choice == "DocumentFiles":
-		st.subheader("DocumentFiles")
+       
+	st.subheader("DocumentFiles")
 		docx_file = st.file_uploader("Upload File",type=['txt','docx','pdf'])
 		if st.button("Process"):
 			if docx_file is not None:
@@ -419,7 +419,7 @@ if __name__ == '__main__':
 						    page = pdf.pages[0]
 						    st.write(page.extract_text())
 					except:
-						st.write("None")
+						st.write("None")	
 					    
 			
 
