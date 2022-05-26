@@ -187,10 +187,7 @@ if __name__ == '__main__':
         if ch:
             st.write('Thank you For Agreeing')
     elif choice == "Login":
-        
-        
         col1, col2, col3 = st.columns([1, 2, 1])
-
         with col2:
             file_ = open("hello.gif", "rb")
             contents = file_.read()
@@ -200,10 +197,7 @@ if __name__ == '__main__':
                 f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
                 unsafe_allow_html=True,
             )
-
-
-   
-
+            
         username = st.sidebar.text_input("User Name")
         password = st.sidebar.text_input("Password", type='password')
         if st.sidebar.checkbox("Login"):
