@@ -395,7 +395,7 @@ if __name__ == '__main__':
                     '</p>', unsafe_allow_html=True)
 	
         st.subheader("Document Files")
-	 uploaded_file = st.file_uploader(
+	uploaded_file = st.file_uploader(
             "",
             type=['txt'], key="2")
         new_title = '<br></br>'
