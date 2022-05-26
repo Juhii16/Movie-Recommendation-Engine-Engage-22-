@@ -380,22 +380,7 @@ if __name__ == '__main__':
             unsafe_allow_html=True)
 
     elif choice == "Contribute":
-        # Add a file uploader to allow users to upload their project plan file
-        st.markdown(""" <style> .font {
-                    font-size:30px ; font-family: 'Trebuchet MS'; color: #FD1C03;  text-align:center;} 
-                  </style> """, unsafe_allow_html=True)
-        st.markdown('<p class="font">Wanna Contribute In our Project ? </p>', unsafe_allow_html=True)
-        new_title = '<br></br>'
-        st.markdown(new_title, unsafe_allow_html=True)
-
-        st.markdown(""" <style> .font21 {
-                        font-size:20px ; color: White; text-align:center;} 
-                        </style> """, unsafe_allow_html=True)
-        st.markdown('<p class="font21">Are we missing a favorite of your movies in our database? Dont Worry  we had '
-                    'you covered, send us a list of the missing masterpieces and we will include them in our corpus '
-                    '</p>', unsafe_allow_html=True)
-	
-        st.subheader("DocumentFiles")
+	st.subheader("DocumentFiles")
 	
 	docx_file = st.file_uploader("Upload File",type=["txt"])
 	
@@ -409,8 +394,25 @@ if __name__ == '__main__':
 				st.write(raw_text) # works				
 			else:
 				st.write('Wrong File Format')	
-		else:
-			st.write('Upload A File')
+	else:
+		st.write('Upload A File')
+		
+        # Add a file uploader to allow users to upload their project plan file
+       # st.markdown(""" <style> .font {
+        #            font-size:30px ; font-family: 'Trebuchet MS'; color: #FD1C03;  text-align:center;} 
+         #         </style> """, unsafe_allow_html=True)
+        #st.markdown('<p class="font">Wanna Contribute In our Project ? </p>', unsafe_allow_html=True)
+        #new_title = '<br></br>'
+        #st.markdown(new_title, unsafe_allow_html=True)
+
+        #st.markdown(""" <style> .font21 {
+         #               font-size:20px ; color: White; text-align:center;} 
+          #              </style> """, unsafe_allow_html=True)
+        #st.markdown('<p class="font21">Are we missing a favorite of your movies in our database? Dont Worry  we had '
+         #           'you covered, send us a list of the missing masterpieces and we will include them in our corpus '
+          #          '</p>', unsafe_allow_html=True)
+	
+      
 	
     elif choice == "Feedback form":
         st.markdown(""" <style> .font {
