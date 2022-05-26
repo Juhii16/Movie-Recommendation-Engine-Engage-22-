@@ -380,7 +380,6 @@ if __name__ == '__main__':
             unsafe_allow_html=True)
 
     elif choice == "Contribute":
-         Add a file uploader to allow users to upload their project plan file
         st.markdown(""" <style> .font {
                     font-size:30px ; font-family: 'Trebuchet MS'; color: #FD1C03;  text-align:center;} 
                   </style> """, unsafe_allow_html=True)
