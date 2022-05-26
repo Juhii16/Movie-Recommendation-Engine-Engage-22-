@@ -5,3 +5,4 @@ requests~=2.27.1
 numpy~=1.22.3
 background~=0.2.1
 Pillow~=9.1.0
+streamlit-lottie
