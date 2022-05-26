@@ -406,14 +406,8 @@ if __name__ == '__main__':
 				st.write(raw_text) # works
 			else:
 				st.write('Wrong File Format')	
-					    
-			
-
-    else:
-	st.subheader("About")
-	st.info("Built with Streamlit")
-        st.info("Jesus Saves @JCharisTech")
-	st.text("Jesse E.Agbe(JCharis)")
+		else:
+			st.write('Upload A File')
 	
     elif choice == "Feedback form":
         st.markdown(""" <style> .font {
