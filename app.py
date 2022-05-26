@@ -8,14 +8,8 @@ import pandas as pd
 import sqlite3
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
 import base64
 
-def load_lottie_url(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
 
 
 
@@ -194,10 +188,7 @@ if __name__ == '__main__':
             st.write('Thank you For Agreeing')
     elif choice == "Login":
 
-        lottie_animation_1 = "https://assets6.lottiefiles.com/packages/lf20_p89yzib1.json"
-        lottie_anime_json = load_lottie_url(lottie_animation_1)
-        st_lottie(lottie_anime_json, key="hello")
-
+   
 
         username = st.sidebar.text_input("User Name")
         password = st.sidebar.text_input("Password", type='password')
