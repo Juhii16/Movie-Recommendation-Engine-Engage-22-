@@ -395,66 +395,39 @@ if __name__ == '__main__':
                     'you covered, send us a list of the missing masterpieces and we will include them in our corpus '
                     '</p>', unsafe_allow_html=True)
 
-        uploaded_file = st.file_uploader(
-            "",
-            type=['csv'], key="2")
-        new_title = '<br></br>'
-        st.markdown(new_title, unsafe_allow_html=True)
+        elif choice == "DocumentFiles":
+		st.subheader("DocumentFiles")
+		docx_file = st.file_uploader("Upload File",type=['txt','docx','pdf'])
+		if st.button("Process"):
+			if docx_file is not None:
+				file_details = {"Filename":docx_file.name,"FileType":docx_file.type,"FileSize":docx_file.size}
+				st.write(file_details)
+				# Check File Type
+				if docx_file.type == "text/plain":
+					# raw_text = docx_file.read() # read as bytes
+					# st.write(raw_text)
+					# st.text(raw_text) # fails
+					st.text(str(docx_file.read(),"utf-8")) # empty
+					raw_text = str(docx_file.read(),"utf-8") # works with st.text and st.write,used for futher processing
+					# st.text(raw_text) # Works
+					st.write(raw_text) # works
+				elif docx_file.type == "application/pdf":
+					# raw_text = read_pdf(docx_file)
+					# st.write(raw_text)
+					try:
+						with pdfplumber.open(docx_file) as pdf:
+						    page = pdf.pages[0]
+						    st.write(page.extract_text())
+					except:
+						st.write("None")
+					    
+			
 
-        if uploaded_file is not None:
-            Tasks = pd.read_csv(uploaded_file)
-            Tasks['Start'] = Tasks['Start'].astype('datetime64')
-            Tasks['Finish'] = Tasks['Finish'].astype('datetime64')
-
-            grid_response = AgGrid(
-                Tasks,
-                editable=True,
-                height=300,
-                width='100%',
-            )
-
-            updated = grid_response['data']
-            df = pd.DataFrame(updated)
-
-            if st.button('Generate Gantt Chart'):
-                fig = px.timeline(
-                    df,
-                    x_start="Start",
-                    x_end="Finish",
-                    y="Task",
-                    color='Completion Pct',
-                    hover_name="Task Description"
-                )
-
-                fig.update_yaxes(
-                    autorange="reversed")  # if not specified as 'reversed', the tasks will be listed from bottom up
-
-                fig.update_layout(
-                    title='Project Plan Gantt Chart',
-                    hoverlabel_bgcolor='#DAEEED',
-                    # Change the hover tooltip background color to a universal light blue color. If not specified, the background color will vary by team or completion pct, depending on what view the user chooses
-                    bargap=0.2,
-                    height=600,
-                    xaxis_title="",
-                    yaxis_title="",
-                    title_x=0.5,  # Make title centered
-                    xaxis=dict(
-                        tickfont_size=15,
-                        tickangle=0,
-                        rangeslider_visible=True,
-                        side="top",  # Place the tick labels on the top of the chart
-                        showgrid=True,
-                        zeroline=True,
-                        showline=True,
-                        showticklabels=True,
-                        tickformat="%x\n",
-                        # Display the tick labels in certain format. To learn more about different formats, visit: https://github.com/d3/d3-format/blob/main/README.md#locale_format
-                    )
-                )
-                st.plotly_chart(fig, use_container_width=True)
-            else:
-                st.write('---')
-
+	else:
+		st.subheader("About")
+		st.info("Built with Streamlit")
+		st.info("Jesus Saves @JCharisTech")
+		st.text("Jesse E.Agbe(JCharis)")
     elif choice == "Feedback form":
         st.markdown(""" <style> .font {
                font-size:30px ; font-family: 'Trebuchet MS'; color: #FD1C03;  text-align:center;} 
