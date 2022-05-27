@@ -23,7 +23,7 @@ I have added database file which I have used in my git Repo in case if you want 
 
 **THis project aims to be more unique and personalized using other methods and a web user interface using streamlit (https://streamlit.io/)**
 
-![App interface](we5.png "Display APP")
+![App interface](1.6.png "Display APP")
 
 
 
