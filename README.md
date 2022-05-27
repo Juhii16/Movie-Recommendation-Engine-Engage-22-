@@ -41,6 +41,7 @@ Here is how the interface looks like :
 ## Installation and set-up 
 
 1- Clone the git repo or download the zip folder
+
 2- Create a python virtual environment 
   To create a virtual environment you can visit (here is the link for refrence) https://docs.python.org/3/library/venv.html
 
@@ -54,6 +55,7 @@ pip install -r requirements.txt
 pip3 install -r requirements.txt
 ````
 4- In case if there are any errors in executing above commands try installing packages mentioned in app.py file manually.
+
 5- To run the project, navigate inside the project directory and type the following command in a python terminal or powershell. 
 ````python
 streamlit run app.py
@@ -61,7 +63,7 @@ streamlit run app.py
    and here you go :)
 
 
-## Usage Instructions
+### Usage Instructions
 ### Types of recommendations
 Here is type of recommendations it offers basically on movie based and genre based
 ![App interface](1.7.png "Display APP movies similar to LoTR")
