@@ -74,27 +74,33 @@ streamlit run app.py
 ## Feature
 Challenge was basically about creating a recommendation system. On above of that I incorporated following features:
 
-   · Sign up for new users
+    · Sign up for new users
 
-   · Log in for existing users
+    · Log in for existing users
 
-   · Movie recommendation based on movie Searched and genre
- 
-   · User can further enhance recommendations by setting a minimum IMDb rating
+    · Movie recommendation based on movie Searched and genre
+    
+    · User can select 1 or more genres to further enhance the recommendations
+    
+    · User can further enhance recommendations by setting a minimum IMDb rating
 
-   · User can get a min of 5 and max of 20 movie recommendations and the movie link redirects the user to its IMDb website
+    · User can get a min of 5 and max of 20 movie recommendations and the movie link redirects the user to its IMDb website
 
-   · Search feature to get movie plot, movie poster and IMDb rating
+    · Search feature to get movie plot, movie poster and IMDb rating
 
-   · User can see last few searches made on the website
- 
-   · Contribute feature where user can provide a txt file of missing movies for us to enhance the corpus of data
- 
-   . User can fill a feedback form 
+    · User can see last few searches made on the website
+
+    · Contribute feature where user can provide a txt file of missing movies for us to enhance the corpus of data
+
+    . User can fill a feedback form 
 
 
 ### Types of recommendations
-Here is type of recommendations it offers basically on movie based and genre based
+The app makes movie recommendations based on
+    1 - A specefic searched movie
+    2-  Genres
+ The user can select multiple genres to enhance the search results and also user enjoys the choice of setting up a minimum IMDb rating 
+ 
 ![App interface](1.7.png "Display APP movies similar to LoTR")
 
 
