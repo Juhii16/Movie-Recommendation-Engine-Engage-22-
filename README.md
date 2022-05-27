@@ -6,7 +6,13 @@ This is a Movie Recommendation Web app built using Streamlit Library as a part o
 
 RUNNING AT: https://share.streamlit.io/juhii16/movie-recommendation-engine-engage-22-/app.py
 
+### Table of Contents
+**[Description](#description)**<br>
+**[Installation](#installation)**<br>
+**[Usage Instructions](#usage-instructions)**<br>
+
 ## Description
+
 
 Usually, when I go on Youtube I like to find videos related to Data Science or Deep Learning that I have not seen before.
 However, sporadically I like to find songs, humoristic videos or even watch some matches of professional League of Legends.
@@ -33,10 +39,6 @@ I have added database file which I have used in my git Repo in case if you want 
 >This dataset also has files containing 26 million ratings from 270,000 users for all 45,000 movies. Ratings are on a scale of 1-5 and have been obtained from the official GroupLens website.
 
 
-### Table of Contents
-**[Description](#description)**<br>
-**[Installation](#installation)**<br>
-**[Usage Instructions](#usage-instructions)**<br>
 
 
 ---
