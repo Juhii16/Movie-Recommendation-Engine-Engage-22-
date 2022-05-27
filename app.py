@@ -195,8 +195,8 @@ if __name__ == '__main__':
 
         username = st.sidebar.text_input("User Name")
         password = st.sidebar.text_input("Password", type='password')
-        st.sidebar.write('Click on the Login button')
-        we = st.sidebar.button("Login")
+        st.sidebar.write('Click on the Login checkbox')
+        we = st.sidebar.checkbox("Login")
         if we:
             # if password == '12345':
             create_usertable()
