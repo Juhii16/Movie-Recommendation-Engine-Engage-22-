@@ -103,7 +103,7 @@ def knn(test_point, k):
     return table
 
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title="Movie Recommendation System")
 
 
 @st.cache(allow_output_mutation=True)
