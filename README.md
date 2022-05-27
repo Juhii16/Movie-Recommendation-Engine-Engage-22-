@@ -72,19 +72,27 @@ streamlit run app.py
 
 
 ## Feature
+Challenge was basically about creating a recommendation system. On above of that I incorporated following features:
 
-1-Sort movies based on ratings from thousands of users
-2-Select your favorite movies to find similar titles
-3-Search for movies using keywords (actors, tags, directors etc.)
-4-Get personalised recommendations based on your own ratings
-5-Automatic light/dark mode toggle based on device theme
-6-Easy-to-use, smooth and responsive UI
-7-Cross platform
-8-Add movies to your watchlist
-9-Accurate recommendations
+· Sign up for new users
+
+· Log in for existing users
+
+· Movie recommendation based on movie Searched and genre
+
+· User can further enhance recommendations by setting a minimum IMDb rating
+
+· User can get a min of 5 and max of 20 movie recommendations and the movie link redirects the user to its IMDb website
+
+· Search feature to get movie plot, movie poster and IMDb rating
+
+· User can see last few searches made on the website
+
+· Contribute feature where user can provide a txt file of missing movies for us to enhance the corpus of data
+
+. User can fill a feedback form 
 
 
-### Usage Instructions
 ### Types of recommendations
 Here is type of recommendations it offers basically on movie based and genre based
 ![App interface](1.7.png "Display APP movies similar to LoTR")
