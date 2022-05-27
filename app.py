@@ -192,10 +192,10 @@ if __name__ == '__main__':
                 f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
                 unsafe_allow_html=True,
             )
-
-        username = st.sidebar.text_input("User Name")
+        st.sidebar.write('Do press enter after putting your username and password to apply')
+        username = st.sidebar.text_input("User Name ")
         password = st.sidebar.text_input("Password", type='password')
-        st.sidebar.write('Click on the Login checkbox')
+        
         we = st.sidebar.checkbox("Login")
         if we:
             # if password == '12345':
