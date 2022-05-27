@@ -195,7 +195,10 @@ if __name__ == '__main__':
 
         username = st.sidebar.text_input("User Name")
         password = st.sidebar.text_input("Password", type='password')
-        if st.sidebar.checkbox("Login"):
+        new_title = '<br></br>'
+        st.markdown(new_title, unsafe_allow_html=True)
+        we = st.sidebar.checkbox("Login")
+        if we:
             # if password == '12345':
             create_usertable()
             hashed_pswd = make_hashes(password)
