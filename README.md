@@ -45,19 +45,30 @@ I have added database file which I have used in my git Repo in case if you want 
 
 ## Installation
 
+Firstlt your code editor will ask to create a python virtual environment so you need to create a virtual env in the folder only. And in case it doesnt asks
+you yourself create a virtual env 
+To create a virtual environment (here is the link for refrence) https://docs.python.org/3/library/venv.html
+
+Then install these libraries 
 
 Streamlit -> Display the app (working on deployment)  
 SQLite3 -> For easier and faster access to the database  
   
-
 ````python
 pip install -r requirements.txt 
 pip3 install -r requirements.txt
 ````
+In case if there is any error try installing packages mentioned in app.py file it will work
+To run your project type 
+````python
+streamlit run app.py
+````
+and here you go :)
+
 ## Usage Instructions
 ### Types of recommendations
 
-![App interface](we5.png "Display APP movies similar to LoTR")
+![App interface](1.6.png "Display APP movies similar to LoTR")
 
 
 
