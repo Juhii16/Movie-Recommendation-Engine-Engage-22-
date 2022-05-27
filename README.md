@@ -14,17 +14,12 @@ RUNNING AT: https://share.streamlit.io/juhii16/movie-recommendation-engine-engag
 ## Description
 
 
-Usually, when I go on Youtube I like to find videos related to Data Science or Deep Learning that I have not seen before.
-However, sporadically I like to find songs, humoristic videos or even watch some matches of professional League of Legends.
-The problem with this is that Youtube would start recommending me music or videogames clips in which I am not really interested.
+This is a Movie Recommendation system which uses K Nearest Neighbour Algorithm to do content based filtering to recommend movies to users based on their input. To fetch the movie plot and IMDb rating it uses OMDb Api.The link for the same is 
+https://www.omdbapi.com/
 
-Then, one night in bed I had a great idea "What if I could create a recommendation system, with different clusters and only see recommendations of the cluster I am interested in". 
+The movie database file which I have used in my project can be found in this git Repo for anyone to use.
 
-Next day, I checked on Youtube and that option was already implemented, but since I don't use the platform that much I had not been aware of it.
-
-Anyway, I wanted to test my idea, so I decided to build that system myself. As a proof of concept, instead of using the Youtube database, I will implement it using the MovieLens Dataset, that can be downloaded from Kaggle.
-
-I have added database file which I have used in my git Repo in case if you want recent databse so you can visit Kaggle (The link for which is Down below)
+In case if you want recent databse so you can visit Kaggle (The link for which is Down below)
 [-> Link to download dataset from Kaggle <-](https://www.kaggle.com/rounakbanik/the-movies-dataset?select=ratings.csv)
 
 **THis project aims to be more unique and personalized using other methods and a web user interface using streamlit (https://streamlit.io/)**
@@ -43,27 +38,28 @@ Here is how the interface looks like :
 
 ---
 
-## Installation
+## Installation and set-up 
 
-Firstlt your code editor will ask to create a python virtual environment so you need to create a virtual env in the folder only. And in case it doesnt asks
-you yourself create a virtual env 
-To create a virtual environment (here is the link for refrence) https://docs.python.org/3/library/venv.html
+1- Clone the git repo or download the zip folder
+2- Create a python virtual environment 
+  To create a virtual environment you can visit (here is the link for refrence) https://docs.python.org/3/library/venv.html
 
-Then install these libraries 
+3- Then install these libraries 
 
-Streamlit -> Display the app (working on deployment)  
-SQLite3 -> For easier and faster access to the database  
+   Streamlit -> Display the app (working on deployment)  
+   SQLite3 -> For easier and faster access to the database  
   
 ````python
 pip install -r requirements.txt 
 pip3 install -r requirements.txt
 ````
-In case if there is any error try installing packages mentioned in app.py file it will work
-To run your project type 
+4- In case if there are any errors in executing above commands try installing packages mentioned in app.py file manually.
+5- To run the project, navigate inside the project directory and type the following command in a python terminal or powershell. 
 ````python
 streamlit run app.py
 ````
-and here you go :)
+   and here you go :)
+
 
 ## Usage Instructions
 ### Types of recommendations
