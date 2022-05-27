@@ -28,7 +28,7 @@ I have added database file which I have used in my git Repo in case if you want 
 [-> Link to download dataset from Kaggle <-](https://www.kaggle.com/rounakbanik/the-movies-dataset?select=ratings.csv)
 
 **THis project aims to be more unique and personalized using other methods and a web user interface using streamlit (https://streamlit.io/)**
-
+Here is how the interface looks like :
 ![App interface](1.6.png "Display APP")
 
 
@@ -36,8 +36,8 @@ I have added database file which I have used in my git Repo in case if you want 
 ### About the dataset
 
 >The dataset consists of movies released on or before July 2017. Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages.
->This dataset also has files containing 26 million ratings from 270,000 users for all 45,000 movies. Ratings are on a scale of 1-5 and have been obtained from the official GroupLens website.
-
+>This dataset also has files containing 26 million ratings from 270,000 users for all 5044 movies.
+>There are around 26-27 Genre to fliter out your movie.
 
 
 
@@ -67,8 +67,9 @@ and here you go :)
 
 ## Usage Instructions
 ### Types of recommendations
+Here is type of recommendations it offers basically on movie based and genre based
+![App interface](1.7.png "Display APP movies similar to LoTR")
 
-![App interface](1.6.png "Display APP movies similar to LoTR")
 
 
 
