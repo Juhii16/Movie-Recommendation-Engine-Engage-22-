@@ -38,14 +38,21 @@ Here is how the interface looks like :
 
 ---
 
+## How to get API key
+Create an account in https://www.omdbapi.com/, click on the API link from the left hand sidebar in your account settings and fill all the details to apply for API key. If you are asked for the website URL, just give "NA" if you don't have one. You will see the API key Sent to your E-mail. And paste your api key in line 261 of app.py file
+
+
+
 ## Installation and set-up 
 
 1- Clone the git repo or download the zip folder
 
 2- Create a python virtual environment 
   To create a virtual environment you can visit (here is the link for refrence) https://docs.python.org/3/library/venv.html
+  
+3-Get your API key 
 
-3- Then install these libraries 
+4- Then install these libraries 
 
    Streamlit -> Display the app (working on deployment)  
    SQLite3 -> For easier and faster access to the database  
@@ -54,13 +61,26 @@ Here is how the interface looks like :
 pip install -r requirements.txt 
 pip3 install -r requirements.txt
 ````
-4- In case if there are any errors in executing above commands try installing packages mentioned in app.py file manually.
+5- In case if there are any errors in executing above commands try installing packages mentioned in app.py file manually.
 
-5- To run the project, navigate inside the project directory and type the following command in a python terminal or powershell. 
+6- To run the project, navigate inside the project directory and type the following command in a python terminal or powershell. 
 ````python
 streamlit run app.py
 ````
    and here you go :)
+
+
+## Feature
+
+1-Sort movies based on ratings from thousands of users
+2-Select your favorite movies to find similar titles
+3-Search for movies using keywords (actors, tags, directors etc.)
+4-Get personalised recommendations based on your own ratings
+5-Automatic light/dark mode toggle based on device theme
+6-Easy-to-use, smooth and responsive UI
+7-Cross platform
+8-Add movies to your watchlist
+9-Accurate recommendations
 
 
 ### Usage Instructions
