@@ -186,9 +186,9 @@ if __name__ == '__main__':
         img1 = img1.resize((1000, 600), )
         st.image(img1, use_column_width=False)
         st.write('<br>', unsafe_allow_html=True)
-       # ch = st.checkbox('I Agree With Terms And Conditions')
-        #if ch:
-         #   st.write('Thank you For Agreeing')
+        ch = st.checkbox('I Agree With Terms And Conditions')
+        if ch:
+            st.write('Thank you For Agreeing')
             
     elif choice == "Login":
         col1, col2, col3 = st.columns([1, 2, 1])
