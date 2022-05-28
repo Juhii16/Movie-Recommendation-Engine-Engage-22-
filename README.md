@@ -51,6 +51,8 @@ Create an account in https://www.omdbapi.com/, click on the API link from the le
 
 ## Set-up 
 
+Download [python version](https://www.python.org/downloads/release/python-3810/)
+
 1- Clone the git repo or download the zip folder
 
 2- Create a python virtual environment in the project folder directory 
