@@ -181,7 +181,7 @@ if __name__ == '__main__':
                     unsafe_allow_html=True)
 
         st.write('<br>', unsafe_allow_html=True)
-        col1, col2, col3 = st.columns([1, 8, 1])
+        col1, col2, col3 = st.columns([1, 9, 1])
         with col2:
               img1 = Image.open('we3.webp')
               img1 = img1.resize((900, 500), )
