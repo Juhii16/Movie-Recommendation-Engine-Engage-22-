@@ -4,7 +4,7 @@ This is a Movie Recommendation Web app built using Streamlit Library as a part o
 
 # Movie Recommendation System
 
-RUNNING AT: https://share.streamlit.io/juhii16/movie-recommendation-engine-engage-22-/app.py
+RUNNING AT: 
 
 ### Table of Contents
 **[Description](#description)**<br>
@@ -75,7 +75,7 @@ streamlit run app.py
 ````
    and here you go :)
 
-7- If you Facing difficulty in installation fill the feedback form mentioned in our [App]( https://share.streamlit.io/juhii16/movie-recommendation-engine-engage-22-/app.py) with problem mentioned
+7- If you Facing difficulty in installation fill the feedback form mentioned in our [App] with problem mentioned
 
 ## Features
 Challenge was basically about creating a recommendation system. On above of that I incorporated following features:
