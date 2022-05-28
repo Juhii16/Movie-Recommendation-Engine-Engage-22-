@@ -26,7 +26,7 @@ The movie database file which I have used in my project can be found in this git
 In case if you want recent databse so you can visit Kaggle (The link for which is Down below)
 [ Link to download dataset from Kaggle ](https://www.kaggle.com/rounakbanik/the-movies-dataset?select=ratings.csv)
 
-**This project aims to be a unique and personalized using other methods and a web user interface using streamlit (https://streamlit.io/)**
+**This project aims to be a unique submission under Microsoft Engage 2022 and is made using streamlit which allows development of efficient interactive web apps with a quick and structured development flow(https://streamlit.io/)**
 Here is how the interface looks like :
 ![App interface](1.6.png "Display APP")
 
@@ -86,7 +86,7 @@ Challenge was basically about creating a recommendation system. On above of that
 
    · Log in for existing users
 
-   · Movie recommendation based on movie Searched and genre
+   · Movie recommendation based on movie searched and genre
  
    · User can further enhance recommendations by setting a minimum IMDb rating
 
@@ -102,7 +102,7 @@ Challenge was basically about creating a recommendation system. On above of that
 
 
 ### Types of recommendations
-Here is type of recommendations it offers basically on movie based and genre based (Content Based filtering)
+It offers recomendations based on movie and genre (Content Based filtering - using KNN Machine Learning Algorithm)
 ![App interface](1.7.png "Display APP movies similar to LoTR")
 
 ## TechnologyUsed
