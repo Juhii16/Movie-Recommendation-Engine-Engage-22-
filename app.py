@@ -306,7 +306,7 @@ if __name__ == '__main__':
                         clean_df = pd.DataFrame(result, columns=["Recent Searches"])
                         st.dataframe(clean_df)
 
-                    unique_list = [i[0] for i in view_all_task_names()]
+                    unique_list = [i[0] for i in view_all_searchlist()]
                     delete_by_task_name = st.selectbox("Select Searches", unique_list)
                     if st.button("Delete"):
                         delete_data(delete_by_task_name)
