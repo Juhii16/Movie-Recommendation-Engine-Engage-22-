@@ -8,6 +8,7 @@ RUNNING AT: https://share.streamlit.io/juhii16/movie-recommendation-engine-engag
 
 ### Table of Contents
 **[Description](#description)**<br>
+**[Dataset](#Dataaset)**<br>
 **[Installation](#installation)**<br>
 **[Architecture](#Architecture)**<br>
 **[Features](#Features)**<br>
@@ -31,7 +32,7 @@ Here is how the interface looks like :
 
 
 
-### About the dataset
+### About the Dataset
 
 >The dataset consists of movies released on or before July 2017. Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages.
 >This dataset also has files containing 26 million ratings from 270,000 users for all 5044 movies.
