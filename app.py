@@ -13,7 +13,7 @@ import base64
 conn = sqlite3.connect('data1.db', check_same_thread=False)
 c = conn.cursor()
 
-
+#DB management for searchlist
 def create_table():
     c.execute('CREATE TABLE IF NOT EXISTS taskstable(task TEXT)')
 
@@ -144,7 +144,7 @@ class AgGrid:
 class AgGrid:
     pass
 
-
+#main function (its easy to understand)
 # e4d96f
 if __name__ == '__main__':
     img1 = Image.open('heading.png')
