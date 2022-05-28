@@ -75,7 +75,7 @@ streamlit run app.py
 ````
    and here you go :)
 
-
+7- If you Facing difficulty in installation fill the feedback form mentioned in our app with problem mentioned [Here]( https://share.streamlit.io/juhii16/movie-recommendation-engine-engage-22-/app.py)
 ## Features
 Challenge was basically about creating a recommendation system. On above of that I incorporated following features:
 
