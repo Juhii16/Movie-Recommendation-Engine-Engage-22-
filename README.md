@@ -51,7 +51,7 @@ Create an account in https://www.omdbapi.com/, click on the API link from the le
 
 1- Clone the git repo or download the zip folder
 
-2- Create a python virtual environment 
+2- Create a python virtual environment in the project folder directory 
   To create a virtual environment you can visit (here is the link for refrence) https://docs.python.org/3/library/venv.html
   
 3-Get your API key 
