@@ -182,7 +182,7 @@ if __name__ == '__main__':
 
         st.write('<br>', unsafe_allow_html=True)
 
-        img1 = Image.open('we3.jpg')
+        img1 = Image.open('we3.webp')
         img1 = img1.resize((1000, 600), )
         st.image(img1, use_column_width=False)
         st.write('<br>', unsafe_allow_html=True)
