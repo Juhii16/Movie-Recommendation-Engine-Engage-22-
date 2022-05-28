@@ -10,7 +10,6 @@ import requests
 import streamlit as st
 import base64
 
-# Creating a database file the searchlist is in this data1.db file) 
 conn = sqlite3.connect('data1.db', check_same_thread=False)
 c = conn.cursor()
 
@@ -19,8 +18,8 @@ def create_table():
     c.execute('CREATE TABLE IF NOT EXISTS taskstable(task TEXT)')
 
 
-def add_data(movie_name):
-    c.execute('INSERT INTO taskstable(task) VALUES (?)', [movie_name])
+def add_data(task):
+    c.execute('INSERT INTO taskstable(task) VALUES (?)', [task])
     conn.commit()
 
 
@@ -36,8 +35,8 @@ def view_all_searchlist():
     return data
 
 
-def delete_data(movie_name):
-    c.execute('DELETE FROM taskstable WHERE task="{}"'.format(movie_name))
+def delete_data(task):
+    c.execute('DELETE FROM taskstable WHERE task="{}"'.format(task))
     conn.commit()
 
     #creating a login based system 
