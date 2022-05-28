@@ -1,3 +1,4 @@
+#import all the pckgs
 import json
 from Classifier import KNearestNeighbours
 from operator import itemgetter
@@ -10,6 +11,7 @@ import requests
 import streamlit as st
 import base64
 
+# Creating a database file the searchlist is in this data1.db file) 
 conn = sqlite3.connect('data1.db', check_same_thread=False)
 c = conn.cursor()
 
@@ -18,8 +20,8 @@ def create_table():
     c.execute('CREATE TABLE IF NOT EXISTS taskstable(task TEXT)')
 
 
-def add_data(task):
-    c.execute('INSERT INTO taskstable(task) VALUES (?)', [task])
+def add_data(movie_name):
+    c.execute('INSERT INTO taskstable(task) VALUES (?)', [movie_name])
     conn.commit()
 
 
@@ -29,16 +31,17 @@ def view_all_data():
     return data
 
 
-def view_all_task_names():
+def view_all_searchlist():
     c.execute('SELECT DISTINCT task FROM taskstable')
     data = c.fetchall()
     return data
 
 
-def delete_data(task):
-    c.execute('DELETE FROM taskstable WHERE task="{}"'.format(task))
+def delete_data(movie_name):
+    c.execute('DELETE FROM taskstable WHERE task="{}"'.format(movie_name))
     conn.commit()
 
+    #creating a login based system 
 
 def make_hashes(password):
     return hashlib.sha256(str.encode(password)).hexdigest()
