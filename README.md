@@ -11,7 +11,8 @@ RUNNING AT: https://share.streamlit.io/juhii16/movie-recommendation-engine-engag
 **[Installation](#installation)**<br>
 **[Architecture](#Architecture)**<br>
 **[Features](#Features)**<br>
-
+**[Technology Used](#Technology Used)**<br>
+**[Resources](#Resources)**<br>
 
 ## Description
 
@@ -22,7 +23,7 @@ https://www.omdbapi.com/
 The movie database file which I have used in my project can be found in this git Repo for anyone to use.
 
 In case if you want recent databse so you can visit Kaggle (The link for which is Down below)
-[-> Link to download dataset from Kaggle <-](https://www.kaggle.com/rounakbanik/the-movies-dataset?select=ratings.csv)
+[ Link to download dataset from Kaggle ](https://www.kaggle.com/rounakbanik/the-movies-dataset?select=ratings.csv)
 
 **THis project aims to be more unique and personalized using other methods and a web user interface using streamlit (https://streamlit.io/)**
 Here is how the interface looks like :
@@ -96,8 +97,21 @@ Challenge was basically about creating a recommendation system. On above of that
 
 
 ### Types of recommendations
-Here is type of recommendations it offers basically on movie based and genre based
+Here is type of recommendations it offers basically on movie based and genre based **(Content Based filtering)
 ![App interface](1.7.png "Display APP movies similar to LoTR")
+
+## Technology Used
+Pandas
+Numpy
+sqlite3
+Python Framework Streamlit
+OMDb API Key
+
+## Resources
+[ Streamlit Docs](https://docs.streamlit.io/)
+[ Link to download dataset from Kaggle ](https://www.kaggle.com/rounakbanik/the-movies-dataset?select=ratings.csv)
+[KNN Algorithm](https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning)
+[Movie recommendation systems](https://www.geeksforgeeks.org/python-implementation-of-movie-recommender-system/?ref=lbp)
 
 
 
