@@ -101,23 +101,18 @@ Here is type of recommendations it offers basically on movie based and genre bas
 ![App interface](1.7.png "Display APP movies similar to LoTR")
 
 ## TechnologyUsed
-   Pandas
-
-   Numpy
-
-   sqlite3
-
-   Python Framework Streamlit
-   
-   OMDb API Key
-   
-   Plotly
+  > Pandas
+  > Numpy
+  > sqlite3
+  > Python Framework Streamlit
+  > OMDb API Key
+  > Plotly
 
 ## Resources
-[ Streamlit Docs](https://docs.streamlit.io/)
-[ Link to download dataset from Kaggle ](https://www.kaggle.com/rounakbanik/the-movies-dataset?select=ratings.csv)
-[KNN Algorithm](https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning)
-[Movie recommendation systems](https://www.geeksforgeeks.org/python-implementation-of-movie-recommender-system/?ref=lbp)
+>[ Streamlit Docs](https://docs.streamlit.io/)
+>[ Link to download dataset from Kaggle ](https://www.kaggle.com/rounakbanik/the-movies-dataset?select=ratings.csv)
+>[KNN Algorithm](https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning)
+>[Movie recommendation systems](https://www.geeksforgeeks.org/python-implementation-of-movie-recommender-system/?ref=lbp)
 
 
 
