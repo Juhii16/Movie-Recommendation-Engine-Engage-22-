@@ -11,7 +11,7 @@ RUNNING AT: https://share.streamlit.io/juhii16/movie-recommendation-engine-engag
 **[Installation](#installation)**<br>
 **[Architecture](#Architecture)**<br>
 **[Features](#Features)**<br>
-**[Technology Used](#Technology Used)**<br>
+**[TechnologyUsed](#TechnologyUsed)**<br>
 **[Resources](#Resources)**<br>
 
 ## Description
@@ -100,12 +100,18 @@ Challenge was basically about creating a recommendation system. On above of that
 Here is type of recommendations it offers basically on movie based and genre based **(Content Based filtering)
 ![App interface](1.7.png "Display APP movies similar to LoTR")
 
-## Technology Used
-Pandas
-Numpy
-sqlite3
-Python Framework Streamlit
-OMDb API Key
+## TechnologyUsed
+   Pandas
+
+   Numpy
+
+   sqlite3
+
+   Python Framework Streamlit
+   
+   OMDb API Key
+   
+   Plotly
 
 ## Resources
 [ Streamlit Docs](https://docs.streamlit.io/)
