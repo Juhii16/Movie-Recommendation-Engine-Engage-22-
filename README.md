@@ -8,8 +8,8 @@ RUNNING AT: https://share.streamlit.io/juhii16/movie-recommendation-engine-engag
 
 ### Table of Contents
 **[Description](#description)**<br>
-**[About the Dataset](# About the Dataset)**<br>
-**[Installation and set-up ](#Installation and set-up )**<br>
+**[Dataset](# About the Dataset)**<br>
+**[Installation](#Installation and set-up )**<br>
 **[Architecture](#Architecture)**<br>
 **[Features](#Features)**<br>
 **[TechnologyUsed](#TechnologyUsed)**<br>
