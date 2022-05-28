@@ -295,7 +295,6 @@ if __name__ == '__main__':
                 elif new_title3 == 'not found':
                     st.error('No movie Found')
                 if choice1 == "Read":
-                    # st.subheader("View Items")
                     with st.expander("View All"):
                         result = view_all_data()
                         # st.write(result)
