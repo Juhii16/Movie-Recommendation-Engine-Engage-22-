@@ -8,7 +8,7 @@ RUNNING AT: https://share.streamlit.io/juhii16/movie-recommendation-engine-engag
 
 ### Table of Contents
 **[Description](#description)**<br>
-**[Dataset](# Dataset)**<br>
+**[Dataset](#Dataset)**<br>
 **[Set-Up](#Set-up )**<br>
 **[Architecture](#Architecture)**<br>
 **[Features](#Features)**<br>
@@ -43,6 +43,7 @@ Here is how the interface looks like :
 ---
 ## Architecture 
 ![App interface](Architecture.jpg "Display APP")
+
 ## How to get API key
 Create an account in https://www.omdbapi.com/, click on the API link from the left hand sidebar in your account settings and fill all the details to apply for API key. If you are asked for the website URL, just give "NA" if you don't have one. You will see the API key Sent to your E-mail. And paste your api key in line 261 of app.py file or use api.py file
 
