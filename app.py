@@ -1,4 +1,3 @@
-#import all the pckgs
 import json
 from Classifier import KNearestNeighbours
 from operator import itemgetter
