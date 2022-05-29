@@ -118,7 +118,6 @@ It offers recomendations based on movie and genre (Content Based filtering - usi
    
    Plotly
 ## Development Cycle
-
 ![App interface](DEVELOPMENT CYCLE.jpg "Display APP")
 
 ## Resources
