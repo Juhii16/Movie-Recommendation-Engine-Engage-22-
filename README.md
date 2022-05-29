@@ -118,7 +118,8 @@ It offers recomendations based on movie and genre (Content Based filtering - usi
    
    Plotly
 ## Development Cycle
-![App interface](Development Cycle.jpg "Display APP")
+![App interface](DEVELOPMENT CYCLE.jpg "Display APP")
+
 ## Resources
 [ Streamlit Docs](https://docs.streamlit.io/)
 
