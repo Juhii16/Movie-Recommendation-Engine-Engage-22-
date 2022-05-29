@@ -117,6 +117,7 @@ It offers recomendations based on movie and genre (Content Based filtering - usi
    OMDb API Key
    
    Plotly
+   
 ## Development Cycle
 ![App interface](DEVELOPMENT CYCLE.jpg "Display APP")
 
